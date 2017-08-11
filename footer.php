@@ -17,7 +17,10 @@
 		<div class="site-info">
 			<div class="container">
 				<div class="row">
-					<div class="gemm-footer-icons col-md-6 text-center">
+					<div class="col-xs-6 gemm-copyright text-center">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">West Wind Discoveries, Inc.</a>
+					</div>
+					<div class="gemm-footer-icons col-xs-6 text-right">
 						<?php
 
 						$query = new WP_Query( array( 'post_type' => 'gemm_footer_social' ) );
@@ -29,9 +32,6 @@
 						<a href="<?php the_field('gemm-sm-footer-link'); ?>" target="__blank"><i class="fa <?php the_field('gemm-footer-icon-class'); ?>" aria-hidden="true"></i></a>
 
 						<?php endwhile; endif; wp_reset_postdata; ?>
-					</div>
-					<div class="col-md-6 gemm-copyright text-center">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="gemm-footer-logo" src="<?php header_image(); ?>"/></a></div>
 					</div>
 				</div> <!-- row -->
 			</div> <!-- container -->

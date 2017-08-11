@@ -21,7 +21,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<div class="text-center gemm-post-featured-img"><?php the_post_thumbnail(); ?></div>
+		<div class="text-center gemm-post-featured-img col-md-12"><?php the_post_thumbnail(); ?></div>
 		<?php
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="gemm-front-posts-meta-single text-center">

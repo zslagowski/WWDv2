@@ -17,7 +17,7 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', get_post_format() ); ?>
 
-      <div class="wwd-sign-up-classes-single text-center"><a href="http://localhost/westwinddiscoveries/payment">Reserve Your Spot</a></div>
+      <a class="wwd-sign-up-classes-single" href="<?php echo esc_url( home_url( '/payment' ) ); ?>" rel="home"><div class="wwd-sign-up-classes-single text-center">Reserve Your Spot</div></a>
 
 			<?php // If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
